@@ -1,0 +1,124 @@
+.listing {
+  background-color: transparent;
+
+}
+.listing-heading {
+  color: var(--primary-color);
+  padding: 20px 20px 0 20px;
+}
+/* .listing-photo {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+} */
+.listing-location {
+  padding: 10px 10px 10px 10px;
+}
+.listing-location::before {
+  content: url("/assets/location-pin.svg") / "";
+}
+
+section.listing a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+section.listing a::after {
+  content: "\203A";
+  margin-left: 5px;
+}
+
+.btn {
+  background: transparent;
+  background-image: -webkit-linear-gradient(top, whitesmoke, transparent);
+  background-image: -moz-linear-gradient(top, whitesmoke, transparent);
+  background-image: -ms-linear-gradient(top, whitesmoke, transparent);
+  background-image: -o-linear-gradient(top, whitesmoke, transparent);
+  background-image: linear-gradient(to bottom, whitesmoke, transparent);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #efefef;
+  /* background-image: -webkit-linear-gradient(top, #fefefe, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db); */
+  text-decoration: none;
+}
+
+
+.card {
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* Card Image */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+  padding: 20px;
+}
+
+/* Course Title */
+.card-title {
+  font-size: 15px;
+  /* font-weight: bold; */
+  /* margin-bottom: 0px; */
+  padding: 20px;
+}
+
+/* Course Description */
+.card-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  /* background-color: #007bff; */
+  
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bolder;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.enroll-btn:hover {
+  background-color: #dbdcdd;
+}
+
+.enroll-btn:active {
+  transform: translateY(2px);
+}
